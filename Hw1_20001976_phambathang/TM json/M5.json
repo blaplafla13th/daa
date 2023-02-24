@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "name": "M5",
+    "author": "Pham Ba Thang",
+    "description": "M\u00e1y Turing th\u1ef1c hi\u1ec7n vi\u1ec7c ki\u1ec3m tra m\u1ed9t d\u00e3y s\u1ed1 nh\u1ecb ph\u00e2n c\u00f3 \u0111\u1ed1i x\u1ee9ng kh\u00f4ng.",
+    "sigma": [
+      "0",
+      "1"
+    ],
+    "start_character": "\u25b6",
+    "end_character": "\u25a0",
+    "start_state": "s",
+    "end_state": "h",
+    "blank_character": "\u25a1"
+  },
+  "tape": {
+    "s": {
+      "0": {
+        "write": "0",
+        "move": 1,
+        "state": "s"
+      },
+      "1": {
+        "write": "1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": -1,
+        "state": "q1"
+      },
+      "\u25b6": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a1",
+        "move": -1,
+        "state": "q1"
+      }
+    },
+    "q1": {
+      "0": {
+        "write": "\u25a1",
+        "move": -1,
+        "state": "q2"
+      },
+      "1": {
+        "write": "\u25a1",
+        "move": -1,
+        "state": "q4"
+      },
+      "\u25a1": {
+        "write": "1",
+        "move": 0,
+        "state": "h"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q1"
+      }
+    },
+    "q2": {
+      "0": {
+        "write": "0",
+        "move": -1,
+        "state": "q2"
+      },
+      "1": {
+        "write": "1",
+        "move": -1,
+        "state": "q2"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q3"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q1"
+      }
+    },
+    "q3": {
+      "0": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "s"
+      },
+      "1": {
+        "write": "1",
+        "move": 0,
+        "state": "q6"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 0,
+        "state": "s"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q1"
+      }
+    },
+    "q4": {
+      "0": {
+        "write": "0",
+        "move": -1,
+        "state": "q4"
+      },
+      "1": {
+        "write": "1",
+        "move": -1,
+        "state": "q4"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q5"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q1"
+      }
+    },
+    "q5": {
+      "0": {
+        "write": "0",
+        "move": 0,
+        "state": "q6"
+      },
+      "1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 0,
+        "state": "s"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q1"
+      }
+    },
+    "q6": {
+      "0": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q6"
+      },
+      "1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q6"
+      },
+      "\u25a1": {
+        "write": "0",
+        "move": 0,
+        "state": "h"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q1"
+      }
+    }
+  }
+}

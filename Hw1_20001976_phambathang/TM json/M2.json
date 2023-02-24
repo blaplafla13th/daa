@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "name": "M2",
+    "author": "Pham Ba Thang",
+    "description": "M\u00e1y Turing th\u1ef1c hi\u1ec7n ph\u00e9p tr\u1eeb 1 c\u1ee7a s\u1ed1 nh\u1ecb ph\u00e2n.",
+    "sigma": [
+      "0",
+      "1"
+    ],
+    "start_character": "\u25b6",
+    "end_character": "\u25a0",
+    "blank_character": "\u25a1",
+    "start_state": "s",
+    "end_state": "h"
+  },
+  "tape": {
+    "s": {
+      "0": {
+        "write": "0",
+        "move": 1,
+        "state": "s"
+      },
+      "1": {
+        "write": "1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q"
+      }
+    },
+    "q": {
+      "0": {
+        "write": "1",
+        "move": -1,
+        "state": "q"
+      },
+      "1": {
+        "write": "0",
+        "move": 0,
+        "state": "h"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 0,
+        "state": "h"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": 0,
+        "state": "h"
+      }
+    }
+  }
+}

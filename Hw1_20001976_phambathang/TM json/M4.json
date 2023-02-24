@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "name": "M4",
+    "author": " Pham Ba Thang ",
+    "description": "X\u00e2y d\u1ef1ng m\u00e1y Turing M 4 th\u1ef1c hi\u1ec7n vi\u1ec7c lo\u1ea1i b\u1ecf c\u00e1c ch\u1eef s\u1ed1 0 trong d\u00e3y nh\u1ecb ph\u00e2n. Sau khi b\u1ecf c\u1ea7n d\u1ed3n d\u00e3y l\u1ea1i.",
+    "sigma": [
+      "1",
+      "0"
+    ],
+    "start_character": "\u25b6",
+    "end_character": "\u25a0",
+    "start_state": "s",
+    "end_state": "h",
+    "blank_character": "\u25a1"
+  },
+  "tape": {
+    "s": {
+      "1": {
+        "write": "1",
+        "move": 1,
+        "state": "s"
+      },
+      "0": {
+        "write": "0",
+        "move": 0,
+        "state": "q1"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q3"
+      }
+    },
+    "q1": {
+      "1": {
+        "write": "1",
+        "move": 0,
+        "state": "q2"
+      },
+      "0": {
+        "write": "0",
+        "move": 1,
+        "state": "q1"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q1"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "q2"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q3"
+      }
+    },
+    "q2": {
+      "1": {
+        "write": "0",
+        "move": -1,
+        "state": "q2"
+      },
+      "0": {
+        "write": "1",
+        "move": -1,
+        "state": "s"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "q2"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 1,
+        "state": "q2"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": 0,
+        "state": "h"
+      }
+    },
+    "q3": {
+      "1": {
+        "write": "1",
+        "move": 0,
+        "state": "h"
+      },
+      "0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q3"
+      },
+      "\u25a1": {
+        "write": "\u25a1",
+        "move": 1,
+        "state": "s"
+      },
+      "\u25b6": {
+        "write": "\u25b6",
+        "move": 0,
+        "state": "h"
+      },
+      "\u25a0": {
+        "write": "\u25a0",
+        "move": -1,
+        "state": "q3"
+      }
+    }
+  }
+}
