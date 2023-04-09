@@ -214,3 +214,5 @@ cython_debug/
 # Zip files
 *.zip
 */*.pdf
+
+/check
